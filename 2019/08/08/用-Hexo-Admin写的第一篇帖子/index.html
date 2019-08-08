@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><meta name="author" content="chasmk"><meta name="renderer" content="webkit"><meta name="copyright" content="chasmk"><meta name="keywords" content="菜鸡姜姜"><meta name="description" content="菜鸡姜姜的blog"><meta name="Cache-Control" content="no-cache"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>用 Hexo Admin写的第一篇帖子 · 菜鸡姜姜</title><link rel="stylesheet" href="/css/style.css?v=2018.7.9"><link rel="stylesheet" href="/css/animation.css?v=2018.7.9"><link rel="icon" href="/img/assets/favicon.jpg"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.6"><!-- scripts--><script>(function( w ){
+  "use strict";
+  // rel=preload support test
+  if( !w.loadCSS ){
+    w.loadCSS = function(){};
+  }
+  // define on the loadCSS obj
+  var rp = loadCSS.relpreload = {};
+  // rel=preload feature support test
+  // runs once and returns a function for compat purposes
+  rp.support = (function(){
+    var ret;
+    try {
+      ret = w.document.createElement( "link" ).relList.supports( "preload" );
+    } catch (e) {
+      ret = false;
+    }
+    return function(){
+      return ret;
+    };
+  })();
+
+  // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+  // then change that media back to its intended value on load
+  rp.bindMediaToggle = function( link ){
+    // remember existing media attr for ultimate state, or default to 'all'
+    var finalMedia = link.media || "all";
+
+    function enableStylesheet(){
+      link.media = finalMedia;
+    }
+
+    // bind load handlers to enable media
+    if( link.addEventListener ){
+      link.addEventListener( "load", enableStylesheet );
+    } else if( link.attachEvent ){
+      link.attachEvent( "onload", enableStylesheet );
+    }
+
+    // Set rel and non-applicable media type to start an async request
+    // note: timeout allows this to happen async to let rendering continue in IE
+    setTimeout(function(){
+      link.rel = "stylesheet";
+      link.media = "only x";
+    });
+    // also enable media after 3 seconds,
+    // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+    setTimeout( enableStylesheet, 3000 );
+  };
+
+  // loop through link elements in DOM
+  rp.poly = function(){
+    // double check this to prevent external calls from running
+    if( rp.support() ){
+      return;
+    }
+    var links = w.document.getElementsByTagName( "link" );
+    for( var i = 0; i < links.length; i++ ){
+      var link = links[ i ];
+      // qualify links to those with rel=preload and as=style attrs
+      if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+        // prevent rerunning on link
+        link.setAttribute( "data-loadcss", true );
+        // bind listeners to toggle media back
+        rp.bindMediaToggle( link );
+      }
+    }
+  };
+
+  // if unsupported, run the polyfill
+  if( !rp.support() ){
+    // run once at least
+    rp.poly();
+
+    // rerun poly on an interval until onload
+    var run = w.setInterval( rp.poly, 500 );
+    if( w.addEventListener ){
+      w.addEventListener( "load", function(){
+        rp.poly();
+        w.clearInterval( run );
+      } );
+    } else if( w.attachEvent ){
+      w.attachEvent( "onload", function(){
+        rp.poly();
+        w.clearInterval( run );
+      } );
+    }
+  }
+
+
+  // commonjs
+  if( typeof exports !== "undefined" ){
+    exports.loadCSS = loadCSS;
+  }
+  else {
+    w.loadCSS = loadCSS;
+  }
+}( typeof global !== "undefined" ? global : this ) );</script><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" defer></script><script src="/js/main.js?v=2018.7.9" defer></script><!-- fancybox--><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script><!-- busuanzi--><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script></head><body><section class="profile-close" id="cxo-profile"><div class="profile-avatar"><i class="fa fa-caret-left"></i><img src="/img/assets/timgJXW5CONH.jpg"></div><!--.profile-saying
+  i.fa.fa-comment
+  .saying--><div class="cxo-profile-inner"><div class="profile-name">姜姜</div><div class="friends"><div>关于我</div><span><a href="//github.com/chasmk" target="_black">github</a></span><span><a href="//https://www.zhihu.com/people/jiang-jiang-54-97/activities" target="_black">知乎</a></span><span><a href="//https://user.qzone.qq.com/864814035/infocenter" target="_black">QQ空间</a></span></div><div class="read-progress"></div></div></section><header id="cxo-intro" style="height: 100vh;background-image: url(/img/intro/222.jpg);"><nav id="cxo-intro-nav"><section><div class="intro-nav-title"><a>菜鸡姜姜's Blog</a></div><div class="intro-nav-label-box"><a href="/">主页</a><a href="/about/">关于</a><a href="/archives/">归档</a><a href="/tags/">标签</a></div><i class="fa fa-bars intro-nav-menu"><div class="intro-nav-drop"><a href="/">主页</a><a href="/about/">关于</a><a href="/archives/">归档</a><a href="/tags/">标签</a></div></i><div class="clear"></div></section></nav><h1 class="post-title">用 Hexo Admin写的第一篇帖子</h1><div class="post-intros"><div class="post-intro-meta"><span class="post-intro-time"><i class="post-intro-calendar fa fa-edit"></i><span>2019.08.08 23:21:01</span></span><span class="post-intro-tags"><a class="intro-tag fa fa-tag" href="javascript:void(0)" date-tags="加密"> 加密</a></span></div><div class="post-intro-read"><span> Word count: <span class="post-count">62</span> | Reading time: <span class="post-count">1</span>min</span></div></div></header><article class="cxo-up" id="cxo-content-outer"><section id="cxo-content-inner"><article class="article-entry" id="post"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <div id="hbe-security"> <div class="hbe-input-container"> <input type="password" class="hbe-form-control" id="pass" placeholder="在此输入密码，若不知，请与我联系。QQ:864814035"> <label for="pass">在此输入密码，若不知，请与我联系。QQ:864814035</label> <div class="bottom-line"></div> </div> </div> <div id="decryptionError" style="display:none;">Incorrect Password!</div> <div id="noContentError" style="display:none;">No content to display!</div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX19qNQzXQ4xTEjQrAu7r/shgGD432kDggzRlSotYGlhJ3MFIH7BcyCascfWv3t4qg++zMI+FUBMILFsSAbEZSnTs0R9bS0qNVS4d+EnsmJYLEoR9Lw0jDX2aJtsmeU4u+LPQZrv1Ni2tZV+Y/MW43H1IzuQl6no8dTrfc+sUn4+GE5+aM00GTUhM8uDwUaAqXw1clAmUifRd/MPM0sJajm3WL9L5c1WlDxbntC1rSCMOVHP0DP8zQgneccU4XdtF4L0Qcq10nnf1JiEJi5aseGJZiRNm0zULfRhHWfXfc3hyNcA082vMDeWcwr0pSaZXURKFE9KzDuTuh1KOJULERTZaVkakGl3TLJq5wqDZWmYDxe0YKl/NXGAnnQRG1XhaKn+H74k88E/ZKMEtvHPQc++HZzGRgzCZzXx/1Gzl7JIerG3vkeT3RRpVrK9ea+HMy7pKnMDubWHPb8mDJo+s0879XLs1CvjT15wO116cxEK9PB0sX3mg4IUbSl20kI8MAQ50oYlnkYMp/yN3P1mJKAVwZGHQlNEskRb07zPFF+zo4EArLZWHZhS005n7vB+AILWfWLOd5gw1sIHQD/bH6JipCIEAk9E6aAPrlkLH8urKsBI05k5qcNWpx6Kz+54z3kYVd33wqJ84l0BWgIIAEYo311/P8n+/ugj1ER0S4ytWEMigoz3wUq4MHQmS03tZUy2GU3l8wJgvIFSTopLOABEr6ERZgYeFJM607imFWUFFhZvFMqiwz8An8p9Qf/BedFvh97D6G1ksl39o4YusOjMpveWlrmsGOb03MAE/o2W/xqjcGUbKAAuL4z0OPKha1VukDOsOmkR6pM8Qvs4iJJWQ1YEIv10vykWCBv5k2f5twXdV4gslz9bwI+Het43sA/ayFy8dVp857U9MKeJA3zayToYM2ssjfYPcR2uhjehjuOxohn35nBNoARGQS5n5tk39/LOloANMhZD2fBSrPQRO67OcnZxyz1vX8diKFTGFw+e7oFo+/MkTm4uTMfR02D+L0idNXeVsNa7i4HbqbTygNyx7XHKkwrtSzbWU/uU21JcxhlGJqkItdz4dTbPKIrOTr0WsyBmBJhBDOSACPwNAmKjsxPE1F8gLTX/UqwrPQJNdsAfNoy0I0PMvvku0r5CM+5Knv827rJ+QPem3FIt031np0k2E7OE0FMJiQgn7dmWzYSUyvlsDftqxqLliQpNS+9oWHnrOmSOxl5Oy44TALbzClo5mHaM3aDWdb3tQ28aYxhUzLgNC </div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css"></article><!-- lincense--><div class="post-paginator"><a class="prevSlogan" href="/2019/08/08/hexo-Encrypt测试帖/" title="hexo-Encrypt测试帖"><span>< PreviousPost</span><br><span class="prevTitle">hexo-Encrypt测试帖</span></a><a class="nextSlogan" href="/2019/08/08/test/" title="test"><span>NextPost ></span><br><span class="nextTitle">test</span></a><div class="clear"></div></div><div id="comment"><div id="lv-container" data-id="city" data-uid="MTAyMC80NTg4Ni8yMjM5Nw=="><script>(function (d, s) {
+  var j, e = d.getElementsByTagName(s)[0];
+  if (typeof LivereTower === 'function') { return; }
+  j = d.createElement(s);
+  j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+  j.async = true;
+  e.parentNode.insertBefore(j, e);
+})(document, 'script');</script></div></div></section></article><footer id="cxo-footer-outer"><div id="cxo-footer-inner"><p class="footer-container"><span> </span><a href="http://hexo.io"><span>Hexo</span></a><span> | theme </span><a href="https://github.com/Longlongyu/hexo-theme-Cxo"><span>Cxo</span></a></p><i class="fa fa-user"> </i><span id="busuanzi_value_site_uv"></span><span> | </span><i class="fa fa-eye"> </i><span id="busuanzi_value_site_pv"></span><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></div></footer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?" + '45f8a9c6a6cff159b6ca8d212e3384dd';
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+   })();</script><!-- catelog--><div class="toc-wrapper" style="top: 100vh;"><div class="toc-catalog"><i class="fa fa-list"> </i><span>CATALOG</span></div></div><!-- top--><i class="fa fa-arrow-up close" id="go-up" aria-hidden="true"></i></div></footer></body></html>

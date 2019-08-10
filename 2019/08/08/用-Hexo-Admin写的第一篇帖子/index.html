@@ -21,6 +21,7 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
   <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
 
@@ -363,7 +364,7 @@
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-U2FsdGVkX19P+3Ltmg3RbzPUMZIjpswuTflZRPd+Fve52yGr5suRXRKhM3vW3/IEAipJLiKtV/a8wNUhgzl2YCjbdNmNY0EaRf4kBU14MF9HrU7zFBC7yh+llkXFvaliu3JK/HMPGS1jxZWvkeXpyx1mTosVEZ/24ZkVY9T/aPTfei9ZFUW9SsjitEqiqrHwGiv1EXvXdOMCK0RmFR2r8vPKaYw6lpoXdmymm9lWEaB0JVQupFuefkfGqenma01jzA/lC40wCWfb5M1A9fHG9r2OUqt6zKgmkWV8fpX/NLGa4jUxcx3aq/gozpXuoE8mnz9DDTdZ6n8DouAIXFkrxL8yU2SiOQmSrzfGpuXQDUbYdxXepkIxMDkZF+OC7Sx4Pq+U9DIT6GP+G2Bu+Oj+8MJf50TG2O1GJ4QRU0mCxx0tg4+VXWYxLSOk2WiUMFSZ2bPIxKwvuwz9A4PUdjPCmrEqKsgoyC6Ogm4ECnrcKkOo3Fx6pqyBWWnzzG+8oa/2oBOrhE7A3zUgYWb2dcADX8LiIG+APjk3iWABavoMVV/RhcUjieOcxD6/qJHgPatI5kXDWNWPwqPNAhMymjQps+Cu7EeWTniHNac8viiC4NoZ+N+f6wGuE1wu5qX9JSqPJK2w4qn854inBgvQDVNMiCdzHcnRMVvQcyAgOtl+FsTECXLRg+NKHyXmCeXyax8JKPVCKeAX8NKCti2GS/OwXSWq0C1HcHfS7mgtQbwGZCc00Y04Ig4iPH42QT8HWKmU/G9ZboU1V+Qt0qULlHX6nAIOFuF8LaKNpyscdbq0qexsyEPv0/EkGYURiToIZZjL
+U2FsdGVkX1+bsccpYqqtqlJLvNyhYvSOGyQODoWKOz/t6lrB4PmH8vn/0SONdPoLDZb7Wq8x5+k9LqQWXBlv0JOZ1/I1W/99nCCVbPHRwiWiSpq7/hJk9+3Lzsx5t3CmzcSAAhQ5oqe8S8vS2oEGiXZwfOobqoOVTQsah1y9w1ewzotWNC8/w70xYMXlGFQz8/OcfXlgSnR8tCsQajArS9JlYR9AdqSFVuX46wrBwNFWXGwp+/s8KBLWvuqHelMunohCnO9Hw/1fo5hXx8AUx12+7Iu8u4mzRIl0hed+EBLZxzD1g3zTvkR8iEvXA1OqffLRGaRosc6M3lmb65fFB/QZMgyIO38xCvZ2nB6KjiRZcVcbGZMTUwRD3yPng/PCFaqJ6BFMWWMBn428XsZ75jCp397ZaJPpiH+yWFrmQf2hvUP30fuLoePumALWL82eldAqEajnF3bZi4FXMCff/6ISTrHQBVjSuaAdRZGTHuVC8ZZR5/1ceGSzSnaIm5EMrxILkzgs3i+JmLAis06Uev+d+ohzUI778uaYnPE+eGWqcqvVPkXP/tCPRAsX8jftJRwhpIM24GsguyecGeWmxhm/XPwpO1pmmakWIMi4oasXYrEqByLJHQERtdd/EnrsNR+fjEzXHXV3fN0lIvxRAurSJ/xlVIfSU7HCTMCRm7gr5Nw0i6diKBgIPMMGVIaQANt9L0hyMuFd7XqasorXOONy+A7Lkg7+42naIzNTL2++28tYHpjIHyo1pYDpenS8ZFVEhGdCLU4bJcbbYAVjndfK08OJPtZnnxBg/4Nnq+DyG8FMbkEE55KjBI4jbN8o
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </div>
@@ -405,6 +406,17 @@ U2FsdGVkX19P+3Ltmg3RbzPUMZIjpswuTflZRPd+Fve52yGr5suRXRKhM3vW3/IEAipJLiKtV/a8wNUh
   <div class="post-widgets">
     <div class="wp_rating">
       <div id="wpac-rating"></div>
+    </div>
+  
+    <div class="social-share">
+      
+      
+        <div id="needsharebutton-postbottom">
+          <span class="btn">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+          </span>
+        </div>
+      
     </div>
   
   </div>
@@ -656,6 +668,36 @@ U2FsdGVkX19P+3Ltmg3RbzPUMZIjpswuTflZRPd+Fve52yGr5suRXRKhM3vW3/IEAipJLiKtV/a8wNUh
       </div>
 
     
+  
+  <div id="needsharebutton-float">
+    <span class="btn">
+      <i class="fa fa-share-alt" aria-hidden="true"></i>
+    </span>
+  </div>
+<script src="/lib/needsharebutton/needsharebutton.js"></script>
+<script>
+    pbOptions = {};
+      pbOptions.iconStyle = "box";
+    
+      pbOptions.boxForm = "horizontal";
+    
+      pbOptions.position = "bottomCenter";
+    
+      pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+    
+    new needShareButton('#needsharebutton-postbottom', pbOptions);
+    flOptions = {};
+      flOptions.iconStyle = "box";
+    
+      flOptions.boxForm = "horizontal";
+    
+      flOptions.position = "middleRight";
+    
+      flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+    
+    new needShareButton('#needsharebutton-float', flOptions);
+</script>
+
 
   </div>
 

@@ -21,6 +21,7 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
   <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
 
@@ -363,7 +364,7 @@
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-U2FsdGVkX19UMx/g0XlzF6+sm+FIsxYB4pW9vWid5PjAG7KHWNJj3WxzxjXkLMipvTolWQ7Tol1Iq7L5PWsprU3yO5Anoil+CjfEe/Ke+t4BLqGB0Am542MXH6jjhhQHnTlbDk9LQ+LqQAUN9m5FOUUV1mYiRWVXA3zjL1a61q5lJV6dxGRAXwZIJlSoP7CspoJmX5dWQX4aizql14OJvQ==
+U2FsdGVkX1/JyLW8TdudsxGojNB+TGdOXbkhoheQoJVLWO6164RlhulvsrEPJTgL5Jfuc4yuLs1Y6+Le5oOPY2Ssoc/HXC9bYgyOcggXOIL6XpJHt27+Cf9mzKgSknyPxa8H9NIi6C9lVl8wnEzXxY7k4mcURMKK9Mr5UY+6qUUYJ73EiIySpDwaczwXSXhnfZEiOPBd+p2r7L4YIklZwA==
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </div>
@@ -405,6 +406,17 @@ U2FsdGVkX19UMx/g0XlzF6+sm+FIsxYB4pW9vWid5PjAG7KHWNJj3WxzxjXkLMipvTolWQ7Tol1Iq7L5
   <div class="post-widgets">
     <div class="wp_rating">
       <div id="wpac-rating"></div>
+    </div>
+  
+    <div class="social-share">
+      
+      
+        <div id="needsharebutton-postbottom">
+          <span class="btn">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+          </span>
+        </div>
+      
     </div>
   
   </div>
@@ -652,6 +664,36 @@ U2FsdGVkX19UMx/g0XlzF6+sm+FIsxYB4pW9vWid5PjAG7KHWNJj3WxzxjXkLMipvTolWQ7Tol1Iq7L5
       </div>
 
     
+  
+  <div id="needsharebutton-float">
+    <span class="btn">
+      <i class="fa fa-share-alt" aria-hidden="true"></i>
+    </span>
+  </div>
+<script src="/lib/needsharebutton/needsharebutton.js"></script>
+<script>
+    pbOptions = {};
+      pbOptions.iconStyle = "box";
+    
+      pbOptions.boxForm = "horizontal";
+    
+      pbOptions.position = "bottomCenter";
+    
+      pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+    
+    new needShareButton('#needsharebutton-postbottom', pbOptions);
+    flOptions = {};
+      flOptions.iconStyle = "box";
+    
+      flOptions.boxForm = "horizontal";
+    
+      flOptions.position = "middleRight";
+    
+      flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+    
+    new needShareButton('#needsharebutton-float', flOptions);
+</script>
+
 
   </div>
 

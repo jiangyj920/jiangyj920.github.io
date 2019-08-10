@@ -4,7 +4,7 @@
 
 
 
-<html class="theme-next gemini use-motion" lang="zh-CN">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="generator" content="Hexo 3.9.0">
@@ -21,19 +21,21 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
 
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Pisces',
     version: '7.3.0',
     exturl: true,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"onmobile":true},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    save_scroll: false,
-    copycode: {"enable":false,"show_result":false,"style":null},
+    save_scroll: true,
+    copycode: {"enable":true,"show_result":true,"style":null},
     fancybox: false,
     mediumzoom: false,
     lazyload: false,
@@ -45,7 +47,7 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},
     path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
@@ -158,8 +160,49 @@
         <li class="menu-item menu-item-home">
       
     
+      
+    
 
     <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+      
+    
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">2</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">0</span></a>
 
   </li>
       
@@ -169,12 +212,54 @@
         <li class="menu-item menu-item-archives">
       
     
+      
+    
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">5</span></a>
 
   </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-sitemap">
+      
+    
+      
+    
+
+    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
   </ul>
 
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+    </div>
 </nav>
 </div>
     </header>
@@ -202,7 +287,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chasmk">
       <meta itemprop="description" content="菜鸡姜姜的blog">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/timgJXW5CONH.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -257,214 +342,20 @@
 
       
           
-            <blockquote>
-<p>转专业机试结束了，发挥并不理想，自己感觉挺遗憾的，毕竟准备了很久，只能下次再来了。这次题目难度中等，与通关考相当。现在把这些题目分享出来，希望对想要转专业的朋友有帮助。如果还想继续练习的话，可以到<a href="http://acm.zjut.edu.cn/onlinejudge/problemset.php?page=4" target="_blank" rel="noopener">浙工大onlinejudge</a>练习。祝大家一路顺利，天天开心。</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>题号</th>
-<th>题目</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>2080 Problem A</td>
-<td>计算机学院欢迎你</td>
-</tr>
-<tr>
-<td>2081 Problem B</td>
-<td>破解字符串的秘密</td>
-</tr>
-<tr>
-<td>2082 Problem C</td>
-<td>各种数制转换问题</td>
-</tr>
-<tr>
-<td>2083 Problem D</td>
-<td>年月日的一个巧合</td>
-</tr>
-<tr>
-<td>2084 Problem E</td>
-<td>找亲密数对的游戏</td>
-</tr>
-</tbody></table>
-<h2 id="Problem-A-计算机学院欢迎你"><a href="#Problem-A-计算机学院欢迎你" class="headerlink" title="Problem A: 计算机学院欢迎你"></a>Problem A: 计算机学院欢迎你</h2><p><kbd>Description</kbd></p>
-<p>请让电脑表达计算机学院对你的欢迎之情吧！</p>
-<p><kbd>Input</kbd></p>
-<p>无输入。</p>
-<p><kbd>Output</kbd></p>
-<p>输出样本示范内容，行末要回车。</p>
-<p><kbd>Sample Input</kbd></p>
-<p>无</p>
-<p><kbd>Sample Output</kbd></p>
-<p>==Welcome to College of Computer Science & Technology!==</p>
-<blockquote>
-<p>这道题就是输出一个字符串，别忘了加换行</p>
-</blockquote>
-<pre><code class="c">#include&lt;iostream&gt;
-using namespace std;
-int main()
-{
-cout&lt;&lt;&quot;Welcome to College of Computer Science &amp; Technology!&quot;&lt;&lt;endl;
-return 0;
-}
-</code></pre>
-<h2 id="Problem-B-破解字符串的秘密"><a href="#Problem-B-破解字符串的秘密" class="headerlink" title="Problem B: 破解字符串的秘密"></a>Problem B: 破解字符串的秘密</h2><p><kbd>Description</kbd></p>
-<p>编程高手能轻松破解任意字符串的秘密：一个字符串由多少数字字符、大写字母字符、小写字母字符、空格字符、其他字符构成。你也来试试看吧！</p>
-<p><kbd>Input</kbd></p>
-<p>按行输入多个字符串。</p>
-<p><kbd>Output</kbd></p>
-<p>对每一行字符串分别统计数字字符(D)、大写字母字符(B)、小写字母字符(S)、空格字符(K)、其他字符的个数(T)，并输出。每行对应的输出以括号中的提示字母开头，然后跟统计值，行末回车。</p>
-<p><kbd>Sample Input</kbd></p>
-<p>==Jennie Is A Nice Girl. She Is 18 Years Old.==<br>==??Really?&*AbaC% appE !==<br>==1 a 2 A 3 $b+123==</p>
-<p><kbd>Sample Output</kbd></p>
-<p>==D2B9S21K9T2==<br>==D0B4S10K2T7==<br>==D6B1S2K5T2==</p>
-<blockquote>
-<p>这是一道基础的字符串处理题，注意要用gets读入整行字符串，因为字符串内包含空格，而scanf和cin遇空格会停止读入，然后遍历整个字符串就好了</p>
-</blockquote>
-<pre><code class="c">#include&lt;iostream&gt;
-#include&lt;cstring&gt;
-#include&lt;ctype.h&gt;
-using namespace std;
-int main()
-{
- char p[1000];
- while(gets(p))//不停读入字符串
- {
-  int s=strlen(p);
-  int num=0;    //以下五个变量用作计数器
-  int alpha=0;
-  int Alpha=0;
-  int space=0;
-  int Else=0;
-  for(int i=0;i&lt;s;i++)//遍历字符串
-  {
-   if(isdigit(p[i])!=0)num++;
-   if(isupper(p[i])!=0) Alpha++;
-   if(islower(p[i])!=0) alpha++;
-   if(p[i]==&#39; &#39;) space++; 
-  }
-  Else=s-num-Alpha-alpha-space; //用总长减去前面的就是其他字符的数量
-  cout&lt;&lt;&quot;D&quot;&lt;&lt;num&lt;&lt;&quot;B&quot;&lt;&lt;Alpha&lt;&lt;&quot;S&quot;&lt;&lt;alpha&lt;&lt;&quot;K&quot;&lt;&lt;space&lt;&lt;&quot;T&quot;&lt;&lt;Else&lt;&lt;endl;
- }
- return 0;
- } </code></pre>
-<h2 id="Problem-C-各种数制转换问题"><a href="#Problem-C-各种数制转换问题" class="headerlink" title="Problem C: 各种数制转换问题"></a>Problem C: 各种数制转换问题</h2><p><kbd>Description</kbd></p>
-<p>在数制王国里，十进制不是唯一的成员。要怎么才能把十进制数转换为其他数制里的数呢？你有办法吗？</p>
-<p><kbd>Input</kbd></p>
-<p>多组输入，每组输入构成为：</p>
-<p>要转换的数制N（N不大于16的自然数） </p>
-<p><kbd>Output</kbd></p>
-<p>每行给出的M个数，将它们统一转换成N进制数，一行一个。每组用空行分隔。</p>
-<p><kbd>Sample Input</kbd></p>
-<p>==2==<br>==3 1 5 8==<br>==10==<br>==2 123 56==<br>==16==<br>==2 18 4567==<br>==14==<br>==3 45 14 20==</p>
-<p><kbd>Sample Output</kbd></p>
-<p>==1==<br>==101==<br>==1000==</p>
-<p>==123==<br>==56==</p>
-<p>==12==<br>==11D7== </p>
-<p>==33==<br>==10==<br>==16==</p>
-<blockquote>
-<p>这道题其实就三步，一是动态分配一个数组，然后输入要转换的数；二是把待转换的数转换为n进制；三是把转换后的数输出。</p>
-<pre><code class="c"></code></pre>
-</blockquote>
-<p>#include<iostream></iostream></p>
-<p>#include<stdlib.h><br>using namespace std;<br>int main()<br>{<br>char o[16]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};<br> //这个数组用与存放最大的16进制中各位所代表的字符<br>  int n;<br> while(cin>>n)<br> {<br>  int m; cin>>m;</stdlib.h></p>
-<p>  int *a=new int[m];//动态分配数组</p>
-<p>  for(int i=0;i<m;i++)<br>  cin>>a[i];</m;i++)<br></p>
-<p>  for(int i=0;i<m;i++) 挨个处理数组中的元素<br>  {<br>   int sys[16];<br>   int x=0;<br>   int tmp=0;<br>   while(a[i]!=0)//转换为n进值的数，并存进sys字符数组中，注意是倒序的，待会要倒序输出<br>   {  tmp=a[i]%n;<br>      sys[x++]=o[tmp];<br>      a[i]/=n;</m;i++)></p>
-<pre><code>} 
-for(int j=x-1;j&gt;=0;j--)//倒序输出
-{
-  cout&lt;&lt;sys[j];
-}
-cout&lt;&lt;endl;</code></pre><p>  }</p>
-<p> }<br> return 0;<br>}</p>
-<pre><code>## Problem D: 年月日的一个巧合
-
-
-
-&lt;kbd&gt;Description
-
-你有经常看日历的习惯吗?有发现一个数据的巧合吗?就是某个月的1号就是周一。你有用心数过一年里这样的月份有哪些吗？来数数看吧！
-
-&lt;kbd&gt;Input
-
-多行输入，每行输入年份Y（Y≥1990，且已知1990的1月1日是周一）。
-
-&lt;kbd&gt;Output
-
-对于每个Y，输出Y年哪些月的1号恰好是周一，月份之间用单空格分隔，行末无空格直接回车；没有这样的月份就输出空行；若Y小于1990则输出Data Error。具体格式如样本输出描述。
-
-&lt;kbd&gt;Sample Input
-
-==2019==
-==2022==
-==2021==
-==1876==
-==1998==
-==1990==
-
-&lt;kbd&gt;Sample Output
-
-==4 7==
-==8==
-==2 3 11==
-==Data Error==
-==6==
-==1 10==
-&gt;这是一道很典型的年月日问题，只需要求出1990年1月1日到当前年份每个月的1号一共有多少天，然后对7取余，余数为1即为星期一
-~~~c
-#include&lt;iostream&gt;
-using namespace std;
-int main()
-{
- int month[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};//用于存放每个月
-                        //的天数，之后就能直接通过下标来获取当前月份的天数
- int year;
- while(cin&gt;&gt;year)
- {
- if(year&lt;1900) 
-   cout&lt;&lt;&quot;Data Error&quot;&lt;&lt;endl;
- else  //如果是合法年份
- {   
-  int date=1; //date用于记录总天数
-  for(int y=1900;y&lt;year;y++) //从1990年开始到当前年份为止，把每年的天数加
-                                                                //上去
-  {
-   if(y%4==0&amp;&amp;y%100!=0||y%400==0)//这是判断是否为闰年的条件，注意要用y判断，
-   //当时机考时我一紧张写成用year判断了，结果导致每一年判断的结果都是输入的那
-   //个年份，唉，真是悔不当初。
-   date+=366;   //如果上面if中的条件成立，说明是闰年，总天数＋366天
-   else date+=365;  //否则＋365天
-  }
-  if(year%4==0&amp;&amp;year%100!=0||year%400==0) month[2]=29;//若是闰年，2月份天数
-                                                      //改为29天
-  for(int i=1;i&lt;=12;i++) //从一月份开始判断，
-  {
-   if(date%7==1) cout&lt;&lt;i&lt;&lt;&quot; &quot;;//如果该月份第一天是星期一，则输出该月份
-   date+=month[i];    //总天数加上一个月
-  }
-  cout&lt;&lt;endl;  //最后别忘了换行
-}
- }
- return 0;
-}</code></pre><h2 id="Problem-E-找亲密数对的游戏"><a href="#Problem-E-找亲密数对的游戏" class="headerlink" title="Problem E: 找亲密数对的游戏"></a>Problem E: 找亲密数对的游戏</h2><p><kbd>Description</kbd></p>
-<p>你有你的亲密朋友，自然数也有。自然数中的亲密朋友描述如下：有两个不同的自然数a，b， 如果a所有的正因子（包括1但不包括a）之和等于b，b所有的正因子（包括1但不包括b）之和等于a，则a,b就是亲密朋友了，称为亲密数对。现在让我们来玩找亲密数对的游戏吧！</p>
-<p><kbd>Input</kbd></p>
-<p>多行输入，每行输入两个自然数M，N (M<=20000，n<=20000)。< p>
-<p><kbd>Output</kbd></p>
-<p>对于每行输入，输出M~N之间的所有亲密数对数和按a的升序显示所有的亲密数对（没有重复显示），格式为：亲密数对数n：[亲密数a1，亲密数b1] [亲密数a2，亲密数b2]……[亲密数an，亲密数bn]；数据值或者区间不合法，则输出Data Error；没有亲密数对则输出0，行末回车。具体格式参看样本输出。</p>
-<p><kbd>Sample Input</kbd></p>
-<p>==2  3000==<br>==100  2000==<br>==1000 80==<br>==2 3==<br>==3000 10000==</p>
-<p><kbd>Sample Output</kbd></p>
-<p>==3:[220,284] [1184,1210] [2620,2924]==<br>==2:[220,284] [1184,1210]==<br>==Data Error==<br>==0==<br>==2:[5020,5564] [6232,6368]==</p>
-<blockquote>
-<p>这道题暂时做不出来，大佬们自行解决吧</p>
-</blockquote>
-<span id="busuanzi_container_page_pv">
-  累计阅读<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>次
-</span></=20000，n<=20000)。<></p>
+            <p>
+              
+转专业机试结束了，发挥并不理想，自己感觉挺遗憾的，毕竟准备了很久，只能下次再来了。这次题目难度中等
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/07/201905浙江工业大学计算机学院转专业一志愿机试题目/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -495,7 +386,7 @@ int main()
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chasmk">
       <meta itemprop="description" content="菜鸡姜姜的blog">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/timgJXW5CONH.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -550,276 +441,20 @@ int main()
 
       
           
-            <blockquote>
-<p>因为转专业可以报两个志愿，所以这次带来了二志愿的题目，难度并没有变化太多，这次很幸运通过了机试，但又倒在了面试上，遗憾之情难以言表，下次再来8 </p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>题号</th>
-<th>题目</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>2097 Problem A</td>
-<td>祝你一切顺利</td>
-</tr>
-<tr>
-<td>2098 Problem B</td>
-<td>字符处理机器</td>
-</tr>
-<tr>
-<td>2099 Problem C</td>
-<td>如何分解合数</td>
-</tr>
-<tr>
-<td>2100 Problem D</td>
-<td>旋转杨辉三角</td>
-</tr>
-<tr>
-<td>2101 Problem E</td>
-<td>铁打营盘流水兵</td>
-</tr>
-</tbody></table>
-<h2 id="Problem-A-祝你一切顺利"><a href="#Problem-A-祝你一切顺利" class="headerlink" title="Problem A: 祝你一切顺利"></a>Problem A: 祝你一切顺利</h2><p><kbd>Description</kbd></p>
-<p>很高兴你想加入计算机学院这个大家庭，在此献上学院对你的衷心祝福：无论未来有无风雨，均愿你一切如意!<br><kbd>Input</kbd></p>
-<p>无输入</p>
-<p><kbd>Output</kbd></p>
-<p>输出样本示范内容，行末回车。</p>
-<p><kbd>Sample Output</kbd></p>
-<p>==Wish you everything goes well in the future!==</p>
-<pre><code class="c">#include&lt;iostream&gt;
-using namespace std;
-int main()
-{
-    cout&lt;&lt;&quot;Wish you everything goes well in the future!&quot;&lt;&lt;endl;
-    return 0;
-}</code></pre>
-<h2 id="Problem-B-字符处理机器"><a href="#Problem-B-字符处理机器" class="headerlink" title="Problem B:字符处理机器"></a>Problem B:字符处理机器</h2><p><kbd>Description</kbd></p>
-<p>有一台字符处理机器，输入一个字符串（串长小于500），就做如下处理：<br>1）大写字母处理为对应的小写字母，小写字母处理为对应的大写字母；<br>2）数字字符处理为加前缀*，如‘3’加工为 *3 ;<br>3）空格处理为’#’；<br>4）其他字符处理为’?’。<br>然后输出处理后的内容。请你来造一台这样的机器吧！</p>
-<p><kbd>Input</kbd></p>
-<p>按行输入多个字符串。</p>
-<p><kbd>Output</kbd></p>
-<p>对每一行字符串均按字符处理机器的要求工作，输出处理结果，行末回车。</p>
-<p><kbd>Sample Input</kbd></p>
-<p>I'm a good student.<br>My phone number is #123456789#<br>AbCd &<em>! 34y34 80 H6^7</em>GH</p>
-<p><kbd>Sample Output</kbd></p>
-<p>i?M#A#GOOD#STUDENT?<br>mY#PHONE#NUMBER#IS#?<em>1</em>2<em>3</em>4<em>5</em>6<em>7</em>8<em>9?<br>aBcD#???#</em>3<em>4Y</em>3<em>4#</em>8<em>0#h</em>6?*7?gh</p>
-<pre><code class="c">#include&lt;iostream&gt;
-#include&lt;cstring&gt;
-#include&lt;ctype.h&gt;
-using namespace std;
-int main()
-{  char a[502];
-    while(gets(a))
-{
-    char tmp[1002];
-    int s=strlen(a);
-    int p=0;
-    for(int i=0;i&lt;s;i++)
-    {
-        if(a[i]&gt;=65&amp;&amp;a[i]&lt;=90) tmp[p++]=a[i]+32;
-        else if(islower(a[i])!=0) tmp[p++]=a[i]-32;
-        else if(isdigit(a[i])!=0) {
-            tmp[p++]=&#39;*&#39;; tmp[p++]=a[i];
-        }
-        else if(a[i]==&#39; &#39;) tmp[p++]=&#39;#&#39;;
-        else tmp[p++]=&#39;?&#39;;         
-    }
-    for(int i=0;i&lt;p;i++)
-    cout&lt;&lt;tmp[i];
-    cout&lt;&lt;endl;          
-}
-
-    return 0;
-}</code></pre>
-<h2 id="Problem-C-如何分解合数"><a href="#Problem-C-如何分解合数" class="headerlink" title="Problem C:如何分解合数"></a>Problem C:如何分解合数</h2><p><kbd>Description</kbd></p>
-<p>在数学里有个基本定理：任意一个大于1的合数都可以分解成有限个素数（质数）的乘积，且分解是唯一的。证明挺麻烦，但是我们可以用计算机来验证。请你来试一试!</p>
-<p><kbd>Input</kbd></p>
-<p>输入若干合数（>2），输入0表示输入结束。</p>
-<p><kbd>Output</kbd></p>
-<p>对于每个有效的正整数输入，输出其分解为若干个素数乘积的表达式，表达式因子按升序（从小到大）输出。一个表达式一行。</p>
-<p><kbd>Sample Input</kbd></p>
-<p>==45 36 34 18 420 0==</p>
-<p><kbd>Sample Output</kbd></p>
-<p><img src="https://img-blog.csdnimg.cn/20190704125348768.png" alt></p>
-<pre><code class="c">#include&lt;iostream&gt;
-using namespace std;
-int a(int  a){
- int  i;
- for(i=2; i&lt;a; ++i)
-  if(a%i == 0)
-   return 0;
- return 1;
-}
-void F(int  n)
-{
- for (int i=2; i&lt;n; ++i)
-  if(n%i == 0)
-      {
-    cout&lt;&lt;i&lt;&lt;&quot;*&quot;;  
-    if(a(n/i))
-    {
-     cout&lt;&lt;n/i&lt;&lt;endl;
-     break;
-    }
-    else
-     F(n/i);
-    break;
-   }
-}
-void f(long long  n)
-{
-  cout&lt;&lt;n&lt;&lt;&quot;=&quot;;
-  for (int i=2; i&lt;n; ++i)
-  if(n%i == 0)
-       {
-    cout&lt;&lt;i&lt;&lt;&quot;*&quot;;
-    if(a(n/i))
-    {
-     cout&lt;&lt;n/i&lt;&lt;endl;
-     break;
-    }
-    else
-     F(n/i);
-    break;
-   }  
-}
-int main()
-{
-  int n;
-   while(cin&gt;&gt;n)
-   {
-   if(n==0) break;
-   else f(n);
-   }
-return 0;
-}</code></pre>
-<h2 id="Problem-D-旋转杨辉三角"><a href="#Problem-D-旋转杨辉三角" class="headerlink" title="Problem D:旋转杨辉三角"></a>Problem D:旋转杨辉三角</h2><p><kbd>Description</kbd></p>
-<p>杨辉三角是一个由数字排列成的三角形数表。其实在杨辉记录之前是由北宋人贾宪率先使用的。因此也称为贾宪三角。贾宪三角最初用作高阶开方运算，为我们现在看到的杨辉三角旋转45度得到。现在来请你重现贾宪当年使用的模样。</p>
-<p><kbd>Input</kbd></p>
-<p>多行输入，每行输入一个自然数(n<20)，一个可显示字符。< p>
-<p><kbd>Output</kbd></p>
-<p>对应每个自然数n, 字符c，输出由c构成的旋转后的杨辉三角。每行每个杨辉三角值对应输出若干字符c, 输出各值之间间隔1个空格。行末回车。</p>
-<p>例如，输入3 a</p>
-<p>则对应旋转后的杨辉三角<br>1 1 1<br>1 2<br>1<br>于是输出<br>a a a<br>a aa<br>a</p>
-<p><kbd>Sample Input</kbd></p>
-<p>==4 *==<br>==6 T==</p>
-<p><kbd>Sample Output</kbd></p>
-<p>==* * * <em>==<br>==</em> <em>* ***==<br>==</em> <em>**==<br>==</em>==<br>==T T T T T T==<br>==T TT TTT TTTT TTTTT==<br>==T TTT TTTTTT TTTTTTTTTT==<br>==T TTTT TTTTTTTTTT==<br>==T TTTTT==<br>==T==</p>
-<pre><code class="c">#include&lt;iostream&gt;
-using namespace std;
-void print(int n,char c)
-{
- while(n--)
- cout&lt;&lt;c;
-}
-int main()
-{
- int n;char c;
- while(cin&gt;&gt;n&gt;&gt;c)
- {
-  int a[20][20];
-  a[0][0]=1;
-  for(int i=0;i&lt;n;i++)
-  {
-   for(int j=0;j&lt;=i;j++)
-   {
-    if(j==0||j==i)a[i][j]=1;
-    else a[i][j]=a[i-1][j-1]+a[i-1][j];
-   }
-  }
-  for(int k=0;k&lt;n;k++)
-  {
-   for(int i=k;i&lt;n;i++)
-   {
-    print(a[i][i-k],c);
-    if(i!=n-1)cout&lt;&lt;&quot; &quot;; 
-   }
-   cout&lt;&lt;endl;
-  }  
- } 
- return 0;
- } </code></pre>
-<h2 id="Problem-E-铁打营盘流水兵"><a href="#Problem-E-铁打营盘流水兵" class="headerlink" title="Problem E:铁打营盘流水兵"></a>Problem E:铁打营盘流水兵</h2><p><kbd>Description</kbd></p>
-<p>某部队在某地驻扎了10个营帐，编号分别为1,2,3,4,5,6,7,8,9,10, 每个营帐最初有若干战士。不打仗时, 每天由于训练导致的非战斗减员为1%；打仗时，每天的战斗减员为10% （减员人数四舍五入凑整，如减员1.4人为实际减员1人，减员1.5人为实际减员2人）。当营帐中的战士减员到50人以内，则由上级部队调派200新兵补充。现在部队需要知道军中士兵的分布情况，会隔若干天就派人去巡视各营帐，然后出报表呈给司令员过目。你来做这件事吧！</p>
-<p><kbd>Input</kbd></p>
-<p>多组输入。每组输入天数，按营帐编号顺序输入战士数, 天数对应的0,1序列（0表示当天不战斗，1表示当天战斗）。</p>
-<p><kbd>Output</kbd></p>
-<p>对应输入数据，给出巡视那天的战士排序报表，按格式“营帐号:人数”降序给出，不同营帐人数相同时按营帐号升序（从小到大）给出。具体格式参考样本输出。</p>
-<p><kbd>Sample Input<br>==26==<br>==100 200 300 400 500 600 700 800 900 1000==<br>==1 1 1 1 0 0 0 1 1 0 0 1 0 1 0 1 0 1 1 1 1 1 1 1 1 1==<br>==3==<br>==55 67 123 87 50 76 60 90 421 303==<br>==0 1 1==</kbd></p>
-<p><kbd>Sample Output</kbd></p>
-<p>==3:220 2:146 10:139 9:125 8:110 7:97 6:84 1:68 5:68 4:55==<br>==9:337 7:248 10:243 1:224 5:202 3:99 8:72 4:69 6:60 2:53==</p>
-<pre><code class="c">#include&lt;iostream&gt;
-#include&lt;set&gt;
-using namespace std;
-struct wars{
-    int id;
-    int mans;
-};
-struct rule{
-    bool operator()(const wars &amp; a,const wars &amp; b)
-    {
-        if(a.mans!=b.mans) return a.mans&gt;b.mans;
-        else return a.id&lt;b.id;
-
-    }
-
-};
-int main()
-{ 
-    int day;
-    int man[10];
-
-    while(cin&gt;&gt;day)
-    {   multiset&lt;wars,rule &gt; st;
-    int *war=new int[day];
-        for(int i=0;i&lt;10;i++)cin&gt;&gt;man[i];
-        for(int i=0;i&lt;day;i++)cin&gt;&gt;war[i];
-        int q=0;
-        while(q&lt;day)
-        { int tmp=1;
-            for(int i=0;i&lt;10;i++)
-            {
-                if(war[q]==1)   {
-                    double x=man[i]*0.1;
-                 tmp=(x*2+1)/2;
-                    man[i]-=tmp;
-                    }
-
-                else    {
-                double y=man[i]*0.01;
-                 tmp=(y*2+1)/2;
-                    man[i]-=tmp;}
-
-
-                    if(man[i]&lt;50) man[i]+=200;
-            }
-                q++;
-        }
-        for(int i=0;i&lt;10;i++)
-        {
-            wars tmp;
-            tmp.mans=man[i];
-            tmp.id=i+1;
-            st.insert(tmp);
-
-        }
-        set&lt;wars,rule&gt;::iterator k=st.begin();
-        for(;k!=st.end();k++)
-        {
-            cout&lt;&lt;k-&gt;id&lt;&lt;&quot;:&quot;&lt;&lt;k-&gt;mans&lt;&lt;&quot; &quot;;
-
-        }
-        cout&lt;&lt;endl;
-    }
-    return 0;
-}</code></pre>
-<span id="busuanzi_container_page_pv">
-  累计阅读<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>次
-</span>
-</20)，一个可显示字符。<></p>
+            <p>
+              
+因为转专业可以报两个志愿，所以这次带来了二志愿的题目，难度并没有变化太多，这次很幸运通过了机试，但
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/07/201906浙江工业大学计算机学院转专业二志愿机试题目/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -850,7 +485,7 @@ int main()
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chasmk">
       <meta itemprop="description" content="菜鸡姜姜的blog">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/timgJXW5CONH.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -944,7 +579,7 @@ int main()
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chasmk">
       <meta itemprop="description" content="菜鸡姜姜的blog">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/timgJXW5CONH.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1038,7 +673,7 @@ int main()
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chasmk">
       <meta itemprop="description" content="菜鸡姜姜的blog">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/timgJXW5CONH.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1085,11 +720,22 @@ int main()
 
       
           
-            <span id="busuanzi_container_page_pv">
-  累计阅读<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>次
-</span>
+            <p>
+              
+  累计阅读次
 
+
+              
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/08/test/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1134,6 +780,9 @@ int main()
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/timgJXW5CONH.gif"
+      alt="chasmk">
   <p class="site-author-name" itemprop="name">chasmk</p>
   <div class="site-description motion-element" itemprop="description">菜鸡姜姜的blog</div>
 </div>
@@ -1172,6 +821,58 @@ int main()
       <i class="fa fa-rss"></i>RSS
     </a>
   </div>
+  <div class="chat motion-element">
+    <a onclick="tidioChatApi.open();">
+  <i class="fa fa-comment"></i>
+    聊聊天吧
+  </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NoYXNtaw==" title="GitHub &rarr; https://github.com/chasmk"><i class="fa fa-fw fa-github"></i>GitHub</span>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="/jiangyijie920@qq.com" title="E-Mail &rarr; jiangyijie920@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <span class="exturl" data-url="aHR0cHM6Ly93ZWliby5jb20vNTIyNjIxMzE0OS9wcm9maWxlP3RvcG5hdj0xJnd2cj02" title="Weibo &rarr; https://weibo.com/5226213149/profile?topnav=1&wvr=6"><i class="fa fa-fw fa-weibo"></i>Weibo</span>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9qaWFuZy1qaWFuZy01NC05Ny9hY3Rpdml0aWVz" title="知乎 &rarr; https://www.zhihu.com/people/jiang-jiang-54-97/activities"><i class="fa fa-fw fa-book"></i>知乎</span>
+      </span>
+    
+  </div>
   <div class="cc-license motion-element" itemprop="license">
     
   
@@ -1179,6 +880,18 @@ int main()
   </div>
 
 
+  <div class="links-of-blogroll motion-element links-of-blogroll-block">
+    <div class="links-of-blogroll-title">
+      <i class="fa  fa-fw fa-link"></i>
+      我的网站
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://jiangyijie.com" title="https://jiangyijie.com">菜鸡姜姜</a>
+        </li>
+      
+    </ul>
+  </div>
 
         </div>
       </div>
@@ -1201,12 +914,50 @@ int main()
 </div>
 
         
+<div class="busuanzi-count">
+  <script pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
 
 
 
 
+  <script pjax>
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66459973";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
+  <script pjax>
+    var _mtac = {};
+    (function() {
+      var mta = document.createElement("script");
+      mta.src = "https://pingjs.qq.com/h5/stats.js";
+      mta.setAttribute("name", "MTAH5");
+      mta.setAttribute("sid", "500693219");
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(mta, s);
+    })();
+  </script>
 
 
         
@@ -1221,9 +972,29 @@ int main()
   </div>
 
   
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/jquery/index.js?v=3.4.1"></script>
+  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
+  <script src="/lib/reading_progress/reading_progress.js"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script defer src="/lib/three/three.min.js"></script>
+  <script defer src="/lib/three/three-waves.min.js"></script>
+  <script defer src="/lib/three/canvas_lines.min.js"></script>
+  <script defer src="/lib/three/canvas_sphere.min.js"></script>
 
 <script src="/js/utils.js?v=7.3.0"></script>
   <script src="/js/motion.js?v=7.3.0"></script>
@@ -1233,13 +1004,36 @@ int main()
   <script src="/js/schemes/pisces.js?v=7.3.0"></script>
 
 
-
 <script src="/js/next-boot.js?v=7.3.0"></script>
 
 
 
 
   
+  <script pjax>
+    (function(){
+      var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+  </script>
+
+
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script pjax>
+  if (CONFIG.page.isPost) {
+    bookmark.scrollToMark('auto', "#更多");
+  } else {
+    bookmark.loadBookmark();
+  }
+  </script>
 
 
 
@@ -1250,6 +1044,36 @@ int main()
 
 
 
+  <script pjax>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 20279,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
+
+
+
+  <script src="/js/local-search.js?v=7.3.0"></script>
+
+
+
+
+
+  <script src="//code.tidio.co/67gsadn6fkk4dubuweyal7mgk9xqnoyg.js"></script>
 
 
 
@@ -1258,15 +1082,7 @@ int main()
 
 
 
-
-
-
-
-
-
-
-
-
+    <div id="pjax">
 
   
 
@@ -1276,5 +1092,45 @@ int main()
 
 
   
+    
+
+    </div>
+    <script>
+var pjax = new Pjax({
+  selectors: [
+    'title',
+    '#page-configurations',
+    '.content-wrap',
+    '.sidebar-inner',
+    '#pjax'
+  ],
+  switches: {
+    '.sidebar-inner': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo: !CONFIG.save_scroll
+});
+$(document).on('pjax:send', function() {
+  $('.sidebar-inner').stop().fadeTo('fast', 0);
+  CONFIG.save_scroll && clearInterval(NexT.utils.saveScrollTimer);
+});
+$(document).on('pjax:success', function() {
+  $('script[pjax], script#page-configurations, #pjax script').each(function(i, o) {
+    $(o).parent().append($(o).remove());
+  });
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  $('.sidebar-inner .motion-element').css('opacity', 1);
+  $('.sidebar-inner').fadeTo('fast', 1);
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
 </body>
 </html>

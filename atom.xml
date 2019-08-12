@@ -5,9 +5,9 @@
   <subtitle>努力努力再努力</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://jiangyijie.com/"/>
+  <link href="https://chasmk.com/"/>
   <updated>2019-08-09T07:20:21.196Z</updated>
-  <id>https://jiangyijie.com/</id>
+  <id>https://chasmk.com/</id>
   
   <author>
     <name>chasmk</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>hexo-Encrypt测试帖</title>
-    <link href="https://jiangyijie.com/2019/08/08/hexo-Encrypt%E6%B5%8B%E8%AF%95%E5%B8%96/"/>
-    <id>https://jiangyijie.com/2019/08/08/hexo-Encrypt测试帖/</id>
+    <link href="https://chasmk.com/2019/08/08/hexo-Encrypt%E6%B5%8B%E8%AF%95%E5%B8%96/"/>
+    <id>https://chasmk.com/2019/08/08/hexo-Encrypt测试帖/</id>
     <published>2019-08-08T10:31:29.000Z</published>
     <updated>2019-08-09T07:20:21.196Z</updated>
     
-    <content type="html"><![CDATA[<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="在此输入密码，若不知，请与我联系。QQ:864814035" />    <label for="pass">在此输入密码，若不知，请与我联系。QQ:864814035</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19Q1aid1AgPDLn5/bHMEjtJn1VcdUilO+jHA3uNn4x7TWg6Ne+l6mhAATYZjXnwn7J1Osuk/rJKhEhoBccuC5QGKulsa7bRz22HykIJMgTzy2e2Ewd9BsNAHFPTYqWBlWrLSH+0dzhA9nomcLiqAAFxuiv1eFADMWGQS0fxIScHXmVUl8wrfufO4QiYwPYa84nXuTTTiHvvuQ==</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="在此输入密码，若不知，请与我联系。QQ:864814035" />    <label for="pass">在此输入密码，若不知，请与我联系。QQ:864814035</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1+Y64eBWh0EKwckMrd8Lm+38uZXWl5g3HXGHOI/MHyl2oRojAO5MwlCm/aE2Mz61ZKHYPFfGbsbNONrky9DsyHuk3/6EgnpU9Q1MaUA2sw1o0wPJU1vG8+lRC7TTzCrmHmVBDJonNOOJC4S2TIt8+zCxUkk4Jk8y09KhTgfGFdYNgeafZAkatTsw2A8Zmwt1+lBtxg0WEVjHw==</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -32,18 +32,18 @@
     </summary>
     
     
-      <category term="加密" scheme="https://jiangyijie.com/tags/%E5%8A%A0%E5%AF%86/"/>
+      <category term="加密" scheme="https://chasmk.com/tags/%E5%8A%A0%E5%AF%86/"/>
     
   </entry>
   
   <entry>
     <title>用 Hexo Admin写的第一篇帖子</title>
-    <link href="https://jiangyijie.com/2019/08/08/%E7%94%A8-Hexo-Admin%E5%86%99%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%B8%96%E5%AD%90/"/>
-    <id>https://jiangyijie.com/2019/08/08/用-Hexo-Admin写的第一篇帖子/</id>
+    <link href="https://chasmk.com/2019/08/08/%E7%94%A8-Hexo-Admin%E5%86%99%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%B8%96%E5%AD%90/"/>
+    <id>https://chasmk.com/2019/08/08/用-Hexo-Admin写的第一篇帖子/</id>
     <published>2019-08-08T09:49:00.000Z</published>
     <updated>2019-08-09T07:45:10.208Z</updated>
     
-    <content type="html"><![CDATA[<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="在此输入密码，若不知，请与我联系。QQ:864814035" />    <label for="pass">在此输入密码，若不知，请与我联系。QQ:864814035</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX18329EXLoHmrt5oJhG9rtOnbSQYdqantFMcHAzIp9uoKgX7etNpzcuj/Cz4KLcsuStKbZcb2ttG6nkP6Jsigh/6muOQAiA087ZEordVvddDw/BrkRFtkAEwlm9qiFfgP7W02urXOJ7hZi51hciVOiQzPfS4/JAycNeY4gYL+37ItnjekLVne2U7ucb4lhAKi2w1GhuKRnNwRQx0V/VhFQ9KVfdJ4cjTP6gFELQebx/j5aQIi3Qydgbmn9XdptuOBj3Ld7WamPRbSFsVCQ427BtxuMglo6nNQEKFGWl9M0UlGLvxex4qnHQ3p0yiya/oR6J/Y4LkxYOwO778zEAcgHVA0csDNFT96o0gmio8wFfI0Rv6jNHa0qJzIeVUjhQn2lfX6yoyvw6oaZNBytz6wIm/09MqXjvC35umHLSVskxPPaIiDWBtRmz5Bg/vj63KEhhCMa+katdjE+Gj05BwbgaporxWlMYUxYfpY3Hn99BkFilJTvxKpAUTobM1lmCQYCIGC96/6Iv2PHNFsul2dhamkE3P1qHFqL7T+oHFtm0uKdH9lx6Q8b1qP0Sy5XZgYxJOGHg17gE2xeSyHTBxQsWnxjCxY4xk5DZa9KCihQc92H78Nv70yv+9fCmVMMt5ChPl1zhn6+Le9iXhtunNFMKSD0WglgdGAmxNOcZG2OC/5N7hhdjLwBE+I/u2K7CPHKBBHlotHALOcpkX9zoMW1fefbtZn16vX1UU8ixnA4gE6VEV35o7Jcjg6PhjTZ6ZChaFD3kjAyxuPFh/gpFM+W0qDJWqipnsf5qtJTOvNxamABMp3Exk5y8Q</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="在此输入密码，若不知，请与我联系。QQ:864814035" />    <label for="pass">在此输入密码，若不知，请与我联系。QQ:864814035</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX183FL04bGbYaq6V+AMAI+O8xs3Qe0p/wjzTlMyD9Sa1O+P0KWuzDl8ioZy1jdKk3nwf02Ds8ZJJr61pdJqm1D6UqqdKfMqKNl64gG1wHv2ZKPT+N9Goj1/kYHd/jR4QnTasw5jijG4e8z2Dk+gB2tp3IugEMysp31Mslm214Hj3emGI3AZrtE3U3SLa4rYuYROVTA+hInVzI+OCjOX/g7TtlOShulRzH7RXSr2vhDruxPL4H+5mWrKBcrsaCEfe0Iu1fuLXtMAXtvzwkuMb7lva/IrPIm1rnqR2OGNS2whh2t63y3tHHQJY2mQeiddXDAwxgluO5wzXS/3t2kpeKcuEZpV/ijB2N97JDcqshX8hYoAbgpvB50xu5GjUEUhqf7PYj7Vx/mEskyAO3u4OsZWYiGiXtPx+pv5VluPW77WXX1/DRng+G116GrwKk3DpKoVqPXtjoZRzgPPQ7GbVG2VsaPK47iz0qGy2By4ega8WAsHa9FssxM6qWv/Brcj+BcUfgQm05zPDXSrritKHsq2gS/f0cQX/00x6LS7AZGvkqY3aZF2ALmpar2UeCstChkSHdrYiuOt/m05kJ1iZqNiKHQHbUjTIzWcu1/bbJw6WaGTjxLzKEUbExGGmFVj9PNCm+NJO66RXbGQ3ZBUdVnfkTgl1ZiQP46SL87QpJhQDzAzqpkZhriO/AL1bQGcFqgt3tJIG6k6Py1jm3OQ3qMdWeGoPcn5+c/HZULsATMCBztRQO0CIWhwMN+Ynx95QfsdTtj6yvNIxbhJ+1Vh1cYqbHieb31LEPgbeWL0AjORBqkVztsvYhoUU</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -52,14 +52,14 @@
     </summary>
     
     
-      <category term="加密" scheme="https://jiangyijie.com/tags/%E5%8A%A0%E5%AF%86/"/>
+      <category term="加密" scheme="https://chasmk.com/tags/%E5%8A%A0%E5%AF%86/"/>
     
   </entry>
   
   <entry>
     <title>test</title>
-    <link href="https://jiangyijie.com/2019/08/08/test/"/>
-    <id>https://jiangyijie.com/2019/08/08/test/</id>
+    <link href="https://chasmk.com/2019/08/08/test/"/>
+    <id>https://chasmk.com/2019/08/08/test/</id>
     <published>2019-08-08T04:43:31.000Z</published>
     <updated>2019-08-11T02:45:08.154Z</updated>
     
@@ -72,8 +72,8 @@
   
   <entry>
     <title>201906浙江工业大学计算机学院转专业二志愿机试题目</title>
-    <link href="https://jiangyijie.com/2019/08/07/201906%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2%E8%BD%AC%E4%B8%93%E4%B8%9A%E4%BA%8C%E5%BF%97%E6%84%BF%E6%9C%BA%E8%AF%95%E9%A2%98%E7%9B%AE/"/>
-    <id>https://jiangyijie.com/2019/08/07/201906浙江工业大学计算机学院转专业二志愿机试题目/</id>
+    <link href="https://chasmk.com/2019/08/07/201906%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2%E8%BD%AC%E4%B8%93%E4%B8%9A%E4%BA%8C%E5%BF%97%E6%84%BF%E6%9C%BA%E8%AF%95%E9%A2%98%E7%9B%AE/"/>
+    <id>https://chasmk.com/2019/08/07/201906浙江工业大学计算机学院转专业二志愿机试题目/</id>
     <published>2019-08-07T09:56:32.000Z</published>
     <updated>2019-08-11T02:45:08.156Z</updated>
     
@@ -96,14 +96,14 @@
     </summary>
     
     
-      <category term="转专业" scheme="https://jiangyijie.com/tags/%E8%BD%AC%E4%B8%93%E4%B8%9A/"/>
+      <category term="转专业" scheme="https://chasmk.com/tags/%E8%BD%AC%E4%B8%93%E4%B8%9A/"/>
     
   </entry>
   
   <entry>
     <title>201905浙江工业大学计算机学院转专业一志愿机试题目</title>
-    <link href="https://jiangyijie.com/2019/08/07/201905%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2%E8%BD%AC%E4%B8%93%E4%B8%9A%E4%B8%80%E5%BF%97%E6%84%BF%E6%9C%BA%E8%AF%95%E9%A2%98%E7%9B%AE/"/>
-    <id>https://jiangyijie.com/2019/08/07/201905浙江工业大学计算机学院转专业一志愿机试题目/</id>
+    <link href="https://chasmk.com/2019/08/07/201905%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2%E8%BD%AC%E4%B8%93%E4%B8%9A%E4%B8%80%E5%BF%97%E6%84%BF%E6%9C%BA%E8%AF%95%E9%A2%98%E7%9B%AE/"/>
+    <id>https://chasmk.com/2019/08/07/201905浙江工业大学计算机学院转专业一志愿机试题目/</id>
     <published>2019-08-07T09:54:00.000Z</published>
     <updated>2019-08-11T02:45:08.156Z</updated>
     
@@ -120,7 +120,7 @@
     </summary>
     
     
-      <category term="转专业" scheme="https://jiangyijie.com/tags/%E8%BD%AC%E4%B8%93%E4%B8%9A/"/>
+      <category term="转专业" scheme="https://chasmk.com/tags/%E8%BD%AC%E4%B8%93%E4%B8%9A/"/>
     
   </entry>
   

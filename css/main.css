@@ -151,11 +151,7 @@ template {
   color: #fff;
 }
 body {
-  background: url("https://source.unsplash.com/random/1600x900");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: cover;
+  background: #eee;
   color: #330;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
@@ -261,13 +257,6 @@ kbd {
   font-family: inherit;
   padding: 0.1em 0.3em;
   white-space: nowrap;
-}
-.main-inner {
-  margin-top: 60px;
-  padding: 60px 60px 60px 60px;
-  background: #fff;
-  opacity: 1;
-  min-height: 500px;
 }
 .text-left {
   text-align: left;
@@ -1824,7 +1813,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d2bb86;
+  background: #0511ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;

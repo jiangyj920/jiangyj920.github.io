@@ -33,7 +33,7 @@
     scheme: 'Gemini',
     version: '7.3.0',
     exturl: true,
-    sidebar: {"position":"left","Muse | Mist":320,"Pisces | Gemini":270,"width":300,"display":"hide","offset":12,"onmobile":true},
+    sidebar: {"position":"left","Muse | Mist":320,"Pisces | Gemini":270,"width":320,"display":"hide","offset":12,"onmobile":true},
     back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
     save_scroll: true,
     copycode: {"enable":true,"show_result":true,"style":null},
@@ -358,6 +358,24 @@
               <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
             </span>
           
+            
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/08/08/hexo-Encrypt测试帖/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/08/hexo-Encrypt测试帖/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
           <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
@@ -400,7 +418,7 @@
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-U2FsdGVkX18xQOFQUGGwwKRxRg1N3EmGMKOS1Cw3xtLpOidnWFnN4dEFwfjP11qBTX4MFcrLtpCNVIBvgJRaNz2sivLI4DPiiAmAPEh3UIvl2x6ixTEPAeL96xQ57laUHlLHTJXOJAoLh6g3OOfd96icSqsHi094klfneCSU8GdM6g5FD+Ek4jOVuvyJGKVCd0fHa95gJhTdJ6hh8OaQnw==
+U2FsdGVkX19w4+so1QsA52BmFB2ykcSO8jHCON4VsARLwoeCYueb/1X5U07zP01JtiPBHItMuScLF2k9DIHjlb10seFjzOC5fokl3gseNTffxU8Gk2XrgTkfpbM2ERgdx6IciuMB7lwGn6Vbrl91ZZxpAh/rEHbS25+eBUb2bf2lg8jLb1/IIarc1aJ/mPTneFZvKev4QOH2kZPJv+33Tg==
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </div>
@@ -493,11 +511,7 @@ U2FsdGVkX18xQOFQUGGwwKRxRg1N3EmGMKOS1Cw3xtLpOidnWFnN4dEFwfjP11qBTX4MFcrLtpCNVIBv
           </div>
           
     
-    
-  <div class="comments" id="comments">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC80NTg4Ni8yMjM5Nw=="></div>
-  </div>
-  
+    <div class="comments" id="comments"></div>
   
 
         </div>
@@ -847,18 +861,29 @@ U2FsdGVkX18xQOFQUGGwwKRxRg1N3EmGMKOS1Cw3xtLpOidnWFnN4dEFwfjP11qBTX4MFcrLtpCNVIBv
 
 
     
+
 <script>
-  window.livereOptions = {
-    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
-  };
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', function() {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'f4Dl7HN68VL2gX4f45iWrzAt-gzGzoHsz',
+    appKey: 'fNidCzHKtF728bDQvTWL8G8A',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
 </script>
 
     </div>

@@ -33,7 +33,7 @@
     scheme: 'Gemini',
     version: '7.3.0',
     exturl: true,
-    sidebar: {"position":"left","Muse | Mist":320,"Pisces | Gemini":270,"width":300,"display":"hide","offset":12,"onmobile":true},
+    sidebar: {"position":"left","Muse | Mist":320,"Pisces | Gemini":270,"width":320,"display":"hide","offset":12,"onmobile":true},
     back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
     save_scroll: true,
     copycode: {"enable":true,"show_result":true,"style":null},
@@ -321,7 +321,7 @@
         <div class="post-meta">
 
     <i class="fa fa-thumb-tack"></i>
-    <font color="red">TOP</font>
+    <font color="0d90cc">TOP</font>
     <span class="post-meta-divider">|</span>
 
             <span class="post-meta-item">
@@ -350,6 +350,24 @@
             
           
 
+          
+            
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/08/07/201905浙江工业大学计算机学院转专业一志愿机试题目/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/07/201905浙江工业大学计算机学院转专业一志愿机试题目/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
           
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -449,7 +467,7 @@
         <div class="post-meta">
 
     <i class="fa fa-thumb-tack"></i>
-    <font color="red">TOP</font>
+    <font color="0d90cc">TOP</font>
     <span class="post-meta-divider">|</span>
 
             <span class="post-meta-item">
@@ -478,6 +496,24 @@
             
           
 
+          
+            
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/08/07/201906浙江工业大学计算机学院转专业二志愿机试题目/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/07/201906浙江工业大学计算机学院转专业二志愿机试题目/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
           
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -603,6 +639,24 @@
           
 
           
+            
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/08/08/hexo-Encrypt测试帖/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/08/hexo-Encrypt测试帖/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
           <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
@@ -722,6 +776,24 @@
           
 
           
+            
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/08/08/用-Hexo-Admin写的第一篇帖子/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/08/用-Hexo-Admin写的第一篇帖子/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
           <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
@@ -840,6 +912,24 @@
             
           
 
+          
+            
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/08/08/test/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/08/test/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
           
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -1270,6 +1360,30 @@
 
   
     
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', function() {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'f4Dl7HN68VL2gX4f45iWrzAt-gzGzoHsz',
+    appKey: 'fNidCzHKtF728bDQvTWL8G8A',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
 
     </div>
     <script>

@@ -90,6 +90,15 @@
   
 
 
+  <script pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?94584ffa353b02f37256d17e671bd62c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -386,7 +395,7 @@
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-U2FsdGVkX19my/zusLzdb8jgAMjfcFmhxJ/D58DQVRl48r5uKUND9EbgV2Ifs6152egoySD4gzz4J3zqwVXJp39bad/sqi6kDidCnBx8PPZG+rrbvWuib2qUJ35xbuNeBzDT3dWfntQmnewyZvXt6Y0SLMgOcgVrSuHDjXqBIetPm0H6i+6FUumiJ8DnrKZ4FHMlDDz6qF/vogylCFQoc4YSz9WDJc2Ac0w4U8rYSVPtLursBvJ6+XT14UV6b2v44X5ytsFivCqz1xL2w8WbhRYH/knaldmEjYt2CFeP/TKQ2hJwQgk2wnpz+2QvehJ4zw106sx+Rt2DDjOceooQoBnNZEwyzZQzBEvokNiwIZYJ/I1z+pFbdmg1fR7KuaPh4vJHbwdMFRcfYIru84Un/sldwIQSWlo9akiEOnroJzn8Wl3nChUWhfN/ApbiSN+EUpupOm+orMKl+BatQXnBxjnvJ+OFJRXoLs0k2maEnNdHtfPDPVMWZzQqItVFDCqg4OuDXhjzrtweyJbw+DaVkGRgFPAW52GUA9wr6dTpGClPtcriYTEf8joOeTmJPjkas3LHH/jOJartXjFow5NJdCiCvJ6FoMehvGldl3qQCQiAHyHvou6UYyC84qB13+aBUfe1orvum374ZTU7IDtqSmtndZkIxigH/iHuZIylGzZ9yh3a1XwWuzN/DAmbtL5yDx1qPrDrNUISjlgrJysGutJf3igJHWh/jai1UG/C8eSjub47XbnGBgQHaU/O++k3B0ruufsbskO6baufkUxRs22czpRn+Pjc58s7Czvf+umtLqkIspqGPGJ2Wxci6sMu
+U2FsdGVkX1+Tzd6cRoSoH3uKJB3jwePggqd1yl1JAFZ5u/rhiPh6BEmALEXc/AgR+QJW5aIcRsloTq1qFUaVeK6dPvyRJyv89c3YsLxJXqR3pRQxyTGPeeIVTUMi8/AyzL+XTzJ+ewUfJjopcswijuOCu/5afj4SglmXbe7MOFJAGrjfEwhsLzysGLfngjG6DR2+Qjo/cl3NCv1up8gGlbXbvKczxALuLvCisK2pneuOvysEwB8tUBNQExxbIlyjwOHK6tClPkGamSi/q2HH9jQ905NpYNVuuPcGXTD+KDkiZO1fzH8aaJxepfkS8iotQVYxx/0YaBHEhvcuoshLE1RR8V19PaAkdzFLXCMjwnW47WkwwCnPPL0eA88KLuizQRzBNF+iB3CqwgcEJOor+Vbey0kheMbmnOEeXmilK+Fq4bRLACc7auz+jnay7vMzIPomZUJGOFRe6BnHzaNzxaEcPARdeY9vk78yoFVzJvh3UjweKD0wp5PI3cNTwtY3pqp/yLE2houYHXbIGv3lIYz31U+0+fjfx7etrOQn0aGbqkeRscBwNi7JWOXn6WGOVrzTa0wBECYl9DT1Wt9SLHXyd2TYZL5dllx2yeSLSxIIyVZ0Uo/plphtUY9nryYzdn0oFq6OxIgj31/nXeDsZMbjC203YibNmD6HGwrr0tLuQkaRywesAs3U4EdNDjGLgptBG1vYp6AXO2y2Q+Nf4PnwqHLlgEHsaHPEyYrATVBLrVQW3TKJ4p+TNVLRbG6M1/fkoR8zdWE21nn0Z3nrFwTUMJxdAzTrJzpW6RRs+BTwv+z8gRtvsmD1j32hGrZG
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </div>
@@ -729,7 +738,7 @@ U2FsdGVkX19my/zusLzdb8jgAMjfcFmhxJ/D58DQVRl48r5uKUND9EbgV2Ifs6152egoySD4gzz4J3zq
     
       pbOptions.position = "bottomCenter";
     
-      pbOptions.networks = "Weibo,QQZone,Wechat,Douban,Twitter,Facebook";
+      pbOptions.networks = "Weibo,QQZone,Wechat,Douban";
     
     new needShareButton('#needsharebutton-postbottom', pbOptions);
     flOptions = {};
@@ -739,7 +748,7 @@ U2FsdGVkX19my/zusLzdb8jgAMjfcFmhxJ/D58DQVRl48r5uKUND9EbgV2Ifs6152egoySD4gzz4J3zq
     
       flOptions.position = "middleRight";
     
-      flOptions.networks = "Weibo,QQZone,Wechat,Douban,Twitter,Facebook";
+      flOptions.networks = "Weibo,QQZone,Wechat,Douban";
     
     new needShareButton('#needsharebutton-float', flOptions);
 </script>

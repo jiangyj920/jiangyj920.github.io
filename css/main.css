@@ -156,7 +156,7 @@ body {
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: cover;
-  color: #000;
+  color: #e34739;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
@@ -213,7 +213,7 @@ span.exturl {
   word-wrap: break-word;
   background-color: transparent;
   border-bottom: 1px solid #000;
-  color: #000;
+  color: #e34739;
   outline: none;
   text-decoration: none;
   cursor: pointer;
@@ -557,7 +557,7 @@ code {
   word-wrap: break-word;
   background: #0d90cc;
   border-radius: 3px;
-  color: #000;
+  color: #e34739;
   padding: 2px 4px;
 }
 pre {
@@ -881,7 +881,7 @@ pre .javascript .function {
 }
 .post-body .tabs ul.nav-tabs li.tab.active a,
 .tabs-comment ul.nav-tabs li.tab.active a {
-  color: #000;
+  color: #e34739;
   cursor: default;
 }
 .post-body .tabs .tab-content .tab-pane,
@@ -995,9 +995,9 @@ pre .javascript .function {
 }
 .btn {
   background: #fff;
-  border: 2px solid #000;
+  border: 2px solid #e34739;
   border-radius: 2px;
-  color: #000;
+  color: #e34739;
   display: inline-block;
   font-size: 0.875em;
   padding: 0 20px;
@@ -1021,7 +1021,7 @@ pre .javascript .function {
   width: 1.285714285714286em;
 }
 .btn-bar {
-  background: #000;
+  background: #e34739;
   border-radius: 1px;
   display: block;
   height: 2px;
@@ -1588,7 +1588,7 @@ pre .javascript .function {
 }
 .post-nav-item a {
   border-bottom: none;
-  color: #000;
+  color: #e34739;
   display: block;
   font-size: 0.875em;
   line-height: 1.6;
@@ -1652,7 +1652,7 @@ pre .javascript .function {
 }
 .posts-expand .post-title-link {
   border-bottom: none;
-  color: #000;
+  color: #e34739;
   display: inline-block;
   line-height: 1.2;
   position: relative;
@@ -1708,7 +1708,7 @@ pre .javascript .function {
 }
 .sidebar a,
 .sidebar span.exturl {
-  border-bottom-color: #000;
+  border-bottom-color: #e34739;
   color: #000;
 }
 .sidebar a:hover,
@@ -1775,7 +1775,7 @@ pre .javascript .function {
 }
 .links-of-author a,
 .links-of-author span.exturl {
-  border-bottom-color: #000;
+  border-bottom-color: #e34739;
   display: inline-block;
   font-size: 0.8125em;
   margin-bottom: 10px;
@@ -1787,7 +1787,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #788cff;
+  background: #7424f1;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1874,7 +1874,7 @@ pre .javascript .function {
 }
 .sidebar-nav li {
   border-bottom: 1px solid transparent;
-  color: #000;
+  color: #e34739;
   cursor: pointer;
   display: inline-block;
   font-size: 0.875em;
@@ -2689,7 +2689,7 @@ ul.breadcrumb li+li:last-child {
 }
 .sidebar a,
 .sidebar span.exturl {
-  color: #000;
+  color: #e34739;
 }
 .sidebar a:hover,
 .sidebar span.exturl:hover {
@@ -2701,7 +2701,7 @@ ul.breadcrumb li+li:last-child {
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   box-sizing: border-box;
-  color: #000;
+  color: #e34739;
   width: 320px;
   opacity: 0;
 }

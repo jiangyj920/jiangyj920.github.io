@@ -103,6 +103,11 @@
 
 
 
+  <script pjax>
+    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+    gio('init','a53498557743566a', {});
+    gio('send');
+  </script>
 
 
   <noscript>
@@ -395,7 +400,7 @@
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-U2FsdGVkX19OV1UhzmEMgphiwrI8yF7EVt1Sv/gfR02cN0BWajATv5sO8eE3+OkYUjBvfNjJKox4ylETvaAQTGeQv3lyMlwftVVyQVWoPXGBarYiTrleinMSph37K4KrMolF+CoWg2gbSkNoQ4bvTs5sN85b4uj9N3ATbRWEkGyY9FRilyc0zuwZNk6373JJ5if0a8JXOTnEfSnlmGwD9g==
+U2FsdGVkX18xQOFQUGGwwKRxRg1N3EmGMKOS1Cw3xtLpOidnWFnN4dEFwfjP11qBTX4MFcrLtpCNVIBvgJRaNz2sivLI4DPiiAmAPEh3UIvl2x6ixTEPAeL96xQ57laUHlLHTJXOJAoLh6g3OOfd96icSqsHi094klfneCSU8GdM6g5FD+Ek4jOVuvyJGKVCd0fHa95gJhTdJ6hh8OaQnw==
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </div>
@@ -444,10 +449,6 @@ U2FsdGVkX19OV1UhzmEMgphiwrI8yF7EVt1Sv/gfR02cN0BWajATv5sO8eE3+OkYUjBvfNjJKox4ylET
 
         
   <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
-  
     <div class="social-share">
       
       
@@ -689,6 +690,9 @@ U2FsdGVkX19OV1UhzmEMgphiwrI8yF7EVt1Sv/gfR02cN0BWajATv5sO8eE3+OkYUjBvfNjJKox4ylET
 </div>
 
 
+  <div style="display: none;">
+    <script pjax src="//s95.cnzz.com/z_stat.php?id=1277916961&web_id=1277916961"></script>
+  </div>
 
 
   <script pjax>
@@ -734,7 +738,7 @@ U2FsdGVkX19OV1UhzmEMgphiwrI8yF7EVt1Sv/gfR02cN0BWajATv5sO8eE3+OkYUjBvfNjJKox4ylET
     
       pbOptions.position = "bottomCenter";
     
-      pbOptions.networks = "Weibo,QQZone,Wechat,Douban";
+      pbOptions.networks = "QQZone,Wechat";
     
     new needShareButton('#needsharebutton-postbottom', pbOptions);
     flOptions = {};
@@ -744,7 +748,7 @@ U2FsdGVkX19OV1UhzmEMgphiwrI8yF7EVt1Sv/gfR02cN0BWajATv5sO8eE3+OkYUjBvfNjJKox4ylET
     
       flOptions.position = "middleRight";
     
-      flOptions.networks = "Weibo,QQZone,Wechat,Douban";
+      flOptions.networks = "QQZone,Wechat";
     
     new needShareButton('#needsharebutton-float', flOptions);
 </script>
@@ -808,26 +812,6 @@ U2FsdGVkX19OV1UhzmEMgphiwrI8yF7EVt1Sv/gfR02cN0BWajATv5sO8eE3+OkYUjBvfNjJKox4ylET
 
 
 
-  <script pjax>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id: 20279,
-      el: 'wpac-rating',
-      color: 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
 
 
 

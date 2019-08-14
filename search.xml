@@ -6,14 +6,14 @@
     <content type="text"><![CDATA[因个人操作失误，不得忍痛割爱，又买了一个域名 新网站点这里]]></content>
   </entry>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[about]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[在下是一名即将大二的菜鸡大学生，就读于生物技术专业。但是想要转专业去学计算机，所以用这个博客来记录下我学习的经历，希望多年以后再回忆时，不会因虚度光阴而悔恨，不会因碌碌无为而忏悔。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[tags]]></title>

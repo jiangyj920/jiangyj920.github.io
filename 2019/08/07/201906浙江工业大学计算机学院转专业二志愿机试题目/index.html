@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="generator" content="Hexo 3.9.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#1E90FF">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=7.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon32x32.ico?v=7.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16x16.ico?v=7.3.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.3.0" color="#1E90FF">
+  <meta name="baidu-site-verification" content="ZOH5Cd1FWS">
+
+<link rel="stylesheet" href="/css/main.css?v=7.3.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-loading-bar.min.css?v=1.0.2">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.3.0',
+    exturl: true,
+    sidebar: {"position":"left","Muse | Mist":320,"Pisces | Gemini":270,"width":320,"display":"hide","offset":12,"onmobile":true},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    save_scroll: true,
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+
+  <meta name="description" content="因为转专业可以报两个志愿，所以这次带来了二志愿的题目，难度并没有变化太多，这次很幸运通过了机试，但又倒在了面试上，遗憾之情难以言表，下次再来8      题号 题目    2097 Problem A 祝你一切顺利   2098 Problem B 字符处理机器   2099 Problem C 如何分解合数   2100 Problem D 旋转杨辉三角   2101 Problem E 铁打">
+<meta name="keywords" content="转专业">
+<meta property="og:type" content="article">
+<meta property="og:title" content="201906浙江工业大学计算机学院转专业二志愿机试题目">
+<meta property="og:url" content="https://jiangyijie.com/2019/08/07/201906浙江工业大学计算机学院转专业二志愿机试题目/index.html">
+<meta property="og:site_name" content="菜鸡姜姜">
+<meta property="og:description" content="因为转专业可以报两个志愿，所以这次带来了二志愿的题目，难度并没有变化太多，这次很幸运通过了机试，但又倒在了面试上，遗憾之情难以言表，下次再来8      题号 题目    2097 Problem A 祝你一切顺利   2098 Problem B 字符处理机器   2099 Problem C 如何分解合数   2100 Problem D 旋转杨辉三角   2101 Problem E 铁打">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190704125348768.png">
+<meta property="og:updated_time" content="2019-08-11T02:45:08.156Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="201906浙江工业大学计算机学院转专业二志愿机试题目">
+<meta name="twitter:description" content="因为转专业可以报两个志愿，所以这次带来了二志愿的题目，难度并没有变化太多，这次很幸运通过了机试，但又倒在了面试上，遗憾之情难以言表，下次再来8      题号 题目    2097 Problem A 祝你一切顺利   2098 Problem B 字符处理机器   2099 Problem C 如何分解合数   2100 Problem D 旋转杨辉三角   2101 Problem E 铁打">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190704125348768.png">
+  <link rel="canonical" href="https://jiangyijie.com/2019/08/07/201906浙江工业大学计算机学院转专业二志愿机试题目/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>201906浙江工业大学计算机学院转专业二志愿机试题目 | 菜鸡姜姜</title>
+  
+
+
+  <script pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?45f8a9c6a6cff159b6ca8d212e3384dd";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <script pjax>
+    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+    gio('init','a53498557743566a', {});
+    gio('send');
+  </script>
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  <div class="container sidebar-position-left">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">菜鸡姜姜</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">努力努力再努力</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+      
+    
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">2</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">0</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">5</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
+  </ul>
+
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+    </div>
+</nav>
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content page-post-detail">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    <div class="reading-progress-bar"></div>
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jiangyijie.com/2019/08/07/201906浙江工业大学计算机学院转专业二志愿机试题目/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chasmk">
+      <meta itemprop="description" content="菜鸡姜姜的blog">
+      <meta itemprop="image" content="/images/timg1.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="菜鸡姜姜">
+    </span>
+      <header class="post-header">
+
+        
+          <h2 class="post-title" itemprop="name headline">201906浙江工业大学计算机学院转专业二志愿机试题目
+
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+    <i class="fa fa-thumb-tack"></i>
+    <font color="0d90cc">TOP</font>
+    <span class="post-meta-divider">|</span>
+
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-07 17:56:32" itemprop="dateCreated datePublished" datetime="2019-08-07T17:56:32+08:00">2019-08-07</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-11 10:45:08" itemprop="dateModified" datetime="2019-08-11T10:45:08+08:00">2019-08-11</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+            
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/08/07/201906浙江工业大学计算机学院转专业二志愿机试题目/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/07/201906浙江工业大学计算机学院转专业二志愿机试题目/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>2.7k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>2 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p>因为转专业可以报两个志愿，所以这次带来了二志愿的题目，难度并没有变化太多，这次很幸运通过了机试，但又倒在了面试上，遗憾之情难以言表，下次再来8 </p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>题号</th>
+<th>题目</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2097 Problem A</td>
+<td>祝你一切顺利</td>
+</tr>
+<tr>
+<td>2098 Problem B</td>
+<td>字符处理机器</td>
+</tr>
+<tr>
+<td>2099 Problem C</td>
+<td>如何分解合数</td>
+</tr>
+<tr>
+<td>2100 Problem D</td>
+<td>旋转杨辉三角</td>
+</tr>
+<tr>
+<td>2101 Problem E</td>
+<td>铁打营盘流水兵</td>
+</tr>
+</tbody></table>
+<h2 id="Problem-A-祝你一切顺利"><a href="#Problem-A-祝你一切顺利" class="headerlink" title="Problem A: 祝你一切顺利"></a>Problem A: 祝你一切顺利</h2><p><kbd>Description</kbd></p>
+<p>很高兴你想加入计算机学院这个大家庭，在此献上学院对你的衷心祝福：无论未来有无风雨，均愿你一切如意!<br><kbd>Input</kbd></p>
+<p>无输入</p>
+<p><kbd>Output</kbd></p>
+<p>输出样本示范内容，行末回车。</p>
+<p><kbd>Sample Output</kbd></p>
+<p>==Wish you everything goes well in the future!==</p>
+<pre><code class="c">#include&lt;iostream&gt;
+using namespace std;
+int main()
+{
+    cout&lt;&lt;&quot;Wish you everything goes well in the future!&quot;&lt;&lt;endl;
+    return 0;
+}</code></pre>
+<h2 id="Problem-B-字符处理机器"><a href="#Problem-B-字符处理机器" class="headerlink" title="Problem B:字符处理机器"></a>Problem B:字符处理机器</h2><p><kbd>Description</kbd></p>
+<p>有一台字符处理机器，输入一个字符串（串长小于500），就做如下处理：<br>1）大写字母处理为对应的小写字母，小写字母处理为对应的大写字母；<br>2）数字字符处理为加前缀*，如‘3’加工为 *3 ;<br>3）空格处理为’#’；<br>4）其他字符处理为’?’。<br>然后输出处理后的内容。请你来造一台这样的机器吧！</p>
+<p><kbd>Input</kbd></p>
+<p>按行输入多个字符串。</p>
+<p><kbd>Output</kbd></p>
+<p>对每一行字符串均按字符处理机器的要求工作，输出处理结果，行末回车。</p>
+<p><kbd>Sample Input</kbd></p>
+<p>I'm a good student.<br>My phone number is #123456789#<br>AbCd &<em>! 34y34 80 H6^7</em>GH</p>
+<p><kbd>Sample Output</kbd></p>
+<p>i?M#A#GOOD#STUDENT?<br>mY#PHONE#NUMBER#IS#?<em>1</em>2<em>3</em>4<em>5</em>6<em>7</em>8<em>9?<br>aBcD#???#</em>3<em>4Y</em>3<em>4#</em>8<em>0#h</em>6?*7?gh</p>
+<pre><code class="c">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;ctype.h&gt;
+using namespace std;
+int main()
+{  char a[502];
+    while(gets(a))
+{
+    char tmp[1002];
+    int s=strlen(a);
+    int p=0;
+    for(int i=0;i&lt;s;i++)
+    {
+        if(a[i]&gt;=65&amp;&amp;a[i]&lt;=90) tmp[p++]=a[i]+32;
+        else if(islower(a[i])!=0) tmp[p++]=a[i]-32;
+        else if(isdigit(a[i])!=0) {
+            tmp[p++]=&#39;*&#39;; tmp[p++]=a[i];
+        }
+        else if(a[i]==&#39; &#39;) tmp[p++]=&#39;#&#39;;
+        else tmp[p++]=&#39;?&#39;;         
+    }
+    for(int i=0;i&lt;p;i++)
+    cout&lt;&lt;tmp[i];
+    cout&lt;&lt;endl;          
+}
+
+    return 0;
+}</code></pre>
+<h2 id="Problem-C-如何分解合数"><a href="#Problem-C-如何分解合数" class="headerlink" title="Problem C:如何分解合数"></a>Problem C:如何分解合数</h2><p><kbd>Description</kbd></p>
+<p>在数学里有个基本定理：任意一个大于1的合数都可以分解成有限个素数（质数）的乘积，且分解是唯一的。证明挺麻烦，但是我们可以用计算机来验证。请你来试一试!</p>
+<p><kbd>Input</kbd></p>
+<p>输入若干合数（>2），输入0表示输入结束。</p>
+<p><kbd>Output</kbd></p>
+<p>对于每个有效的正整数输入，输出其分解为若干个素数乘积的表达式，表达式因子按升序（从小到大）输出。一个表达式一行。</p>
+<p><kbd>Sample Input</kbd></p>
+<p>==45 36 34 18 420 0==</p>
+<p><kbd>Sample Output</kbd></p>
+<p><img src="https://img-blog.csdnimg.cn/20190704125348768.png" alt></p>
+<pre><code class="c">#include&lt;iostream&gt;
+using namespace std;
+int a(int  a){
+ int  i;
+ for(i=2; i&lt;a; ++i)
+  if(a%i == 0)
+   return 0;
+ return 1;
+}
+void F(int  n)
+{
+ for (int i=2; i&lt;n; ++i)
+  if(n%i == 0)
+      {
+    cout&lt;&lt;i&lt;&lt;&quot;*&quot;;  
+    if(a(n/i))
+    {
+     cout&lt;&lt;n/i&lt;&lt;endl;
+     break;
+    }
+    else
+     F(n/i);
+    break;
+   }
+}
+void f(long long  n)
+{
+  cout&lt;&lt;n&lt;&lt;&quot;=&quot;;
+  for (int i=2; i&lt;n; ++i)
+  if(n%i == 0)
+       {
+    cout&lt;&lt;i&lt;&lt;&quot;*&quot;;
+    if(a(n/i))
+    {
+     cout&lt;&lt;n/i&lt;&lt;endl;
+     break;
+    }
+    else
+     F(n/i);
+    break;
+   }  
+}
+int main()
+{
+  int n;
+   while(cin&gt;&gt;n)
+   {
+   if(n==0) break;
+   else f(n);
+   }
+return 0;
+}</code></pre>
+<h2 id="Problem-D-旋转杨辉三角"><a href="#Problem-D-旋转杨辉三角" class="headerlink" title="Problem D:旋转杨辉三角"></a>Problem D:旋转杨辉三角</h2><p><kbd>Description</kbd></p>
+<p>杨辉三角是一个由数字排列成的三角形数表。其实在杨辉记录之前是由北宋人贾宪率先使用的。因此也称为贾宪三角。贾宪三角最初用作高阶开方运算，为我们现在看到的杨辉三角旋转45度得到。现在来请你重现贾宪当年使用的模样。</p>
+<p><kbd>Input</kbd></p>
+<p>多行输入，每行输入一个自然数(n<20)，一个可显示字符。< p>
+<p><kbd>Output</kbd></p>
+<p>对应每个自然数n, 字符c，输出由c构成的旋转后的杨辉三角。每行每个杨辉三角值对应输出若干字符c, 输出各值之间间隔1个空格。行末回车。</p>
+<p>例如，输入3 a</p>
+<p>则对应旋转后的杨辉三角<br>1 1 1<br>1 2<br>1<br>于是输出<br>a a a<br>a aa<br>a</p>
+<p><kbd>Sample Input</kbd></p>
+<p>==4 *==<br>==6 T==</p>
+<p><kbd>Sample Output</kbd></p>
+<p>==* * * <em>==<br>==</em> <em>* ***==<br>==</em> <em>**==<br>==</em>==<br>==T T T T T T==<br>==T TT TTT TTTT TTTTT==<br>==T TTT TTTTTT TTTTTTTTTT==<br>==T TTTT TTTTTTTTTT==<br>==T TTTTT==<br>==T==</p>
+<pre><code class="c">#include&lt;iostream&gt;
+using namespace std;
+void print(int n,char c)
+{
+ while(n--)
+ cout&lt;&lt;c;
+}
+int main()
+{
+ int n;char c;
+ while(cin&gt;&gt;n&gt;&gt;c)
+ {
+  int a[20][20];
+  a[0][0]=1;
+  for(int i=0;i&lt;n;i++)
+  {
+   for(int j=0;j&lt;=i;j++)
+   {
+    if(j==0||j==i)a[i][j]=1;
+    else a[i][j]=a[i-1][j-1]+a[i-1][j];
+   }
+  }
+  for(int k=0;k&lt;n;k++)
+  {
+   for(int i=k;i&lt;n;i++)
+   {
+    print(a[i][i-k],c);
+    if(i!=n-1)cout&lt;&lt;&quot; &quot;; 
+   }
+   cout&lt;&lt;endl;
+  }  
+ } 
+ return 0;
+ } </code></pre>
+<h2 id="Problem-E-铁打营盘流水兵"><a href="#Problem-E-铁打营盘流水兵" class="headerlink" title="Problem E:铁打营盘流水兵"></a>Problem E:铁打营盘流水兵</h2><p><kbd>Description</kbd></p>
+<p>某部队在某地驻扎了10个营帐，编号分别为1,2,3,4,5,6,7,8,9,10, 每个营帐最初有若干战士。不打仗时, 每天由于训练导致的非战斗减员为1%；打仗时，每天的战斗减员为10% （减员人数四舍五入凑整，如减员1.4人为实际减员1人，减员1.5人为实际减员2人）。当营帐中的战士减员到50人以内，则由上级部队调派200新兵补充。现在部队需要知道军中士兵的分布情况，会隔若干天就派人去巡视各营帐，然后出报表呈给司令员过目。你来做这件事吧！</p>
+<p><kbd>Input</kbd></p>
+<p>多组输入。每组输入天数，按营帐编号顺序输入战士数, 天数对应的0,1序列（0表示当天不战斗，1表示当天战斗）。</p>
+<p><kbd>Output</kbd></p>
+<p>对应输入数据，给出巡视那天的战士排序报表，按格式“营帐号:人数”降序给出，不同营帐人数相同时按营帐号升序（从小到大）给出。具体格式参考样本输出。</p>
+<p><kbd>Sample Input<br>==26==<br>==100 200 300 400 500 600 700 800 900 1000==<br>==1 1 1 1 0 0 0 1 1 0 0 1 0 1 0 1 0 1 1 1 1 1 1 1 1 1==<br>==3==<br>==55 67 123 87 50 76 60 90 421 303==<br>==0 1 1==</kbd></p>
+<p><kbd>Sample Output</kbd></p>
+<p>==3:220 2:146 10:139 9:125 8:110 7:97 6:84 1:68 5:68 4:55==<br>==9:337 7:248 10:243 1:224 5:202 3:99 8:72 4:69 6:60 2:53==</p>
+<pre><code class="c">#include&lt;iostream&gt;
+#include&lt;set&gt;
+using namespace std;
+struct wars{
+    int id;
+    int mans;
+};
+struct rule{
+    bool operator()(const wars &amp; a,const wars &amp; b)
+    {
+        if(a.mans!=b.mans) return a.mans&gt;b.mans;
+        else return a.id&lt;b.id;
+
+    }
+
+};
+int main()
+{ 
+    int day;
+    int man[10];
+
+    while(cin&gt;&gt;day)
+    {   multiset&lt;wars,rule &gt; st;
+    int *war=new int[day];
+        for(int i=0;i&lt;10;i++)cin&gt;&gt;man[i];
+        for(int i=0;i&lt;day;i++)cin&gt;&gt;war[i];
+        int q=0;
+        while(q&lt;day)
+        { int tmp=1;
+            for(int i=0;i&lt;10;i++)
+            {
+                if(war[q]==1)   {
+                    double x=man[i]*0.1;
+                 tmp=(x*2+1)/2;
+                    man[i]-=tmp;
+                    }
+
+                else    {
+                double y=man[i]*0.01;
+                 tmp=(y*2+1)/2;
+                    man[i]-=tmp;}
+
+
+                    if(man[i]&lt;50) man[i]+=200;
+            }
+                q++;
+        }
+        for(int i=0;i&lt;10;i++)
+        {
+            wars tmp;
+            tmp.mans=man[i];
+            tmp.id=i+1;
+            st.insert(tmp);
+
+        }
+        set&lt;wars,rule&gt;::iterator k=st.begin();
+        for(;k!=st.end();k++)
+        {
+            cout&lt;&lt;k-&gt;id&lt;&lt;&quot;:&quot;&lt;&lt;k-&gt;mans&lt;&lt;&quot; &quot;;
+
+        }
+        cout&lt;&lt;endl;
+    }
+    return 0;
+}</code></pre>
+</20)，一个可显示字符。<></p>
+    </div>
+
+    
+    
+    
+          <div>
+             
+              <div>
+    
+        <div style="text-align:center;color: #A9A9A9;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+          
+          </div>
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/转专业/" rel="tag"><i class="fa fa-tag"></i> 转专业</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/08/07/201905浙江工业大学计算机学院转专业一志愿机试题目/" rel="next" title="201905浙江工业大学计算机学院转专业一志愿机试题目">
+                  <i class="fa fa-chevron-left"></i> 201905浙江工业大学计算机学院转专业一志愿机试题目
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/08/08/test/" rel="prev" title="test">
+                  test <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+    
+    <div class="comments" id="comments"></div>
+  
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/timg1.gif"
+      alt="chasmk">
+  <p class="site-author-name" itemprop="name">chasmk</p>
+  <div class="site-description motion-element" itemprop="description">菜鸡姜姜的blog</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="chat motion-element">
+    <a onclick="tidioChatApi.open();">
+  <i class="fa fa-comment"></i>
+    聊聊天吧
+  </a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element links-of-blogroll-block">
+    <div class="links-of-blogroll-title">
+      <i class="fa  fa-fw fa-link"></i>
+      我的网站
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9jaGFzbWsuY29t" title="https://chasmk.com">菜鸡姜姜</span>
+        </li>
+      
+    </ul>
+  </div>
+
+        </div>
+      </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-A-祝你一切顺利"><span class="nav-number">1.</span> <span class="nav-text">Problem A: 祝你一切顺利</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-B-字符处理机器"><span class="nav-number">2.</span> <span class="nav-text">Problem B:字符处理机器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-C-如何分解合数"><span class="nav-number">3.</span> <span class="nav-text">Problem C:如何分解合数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-D-旋转杨辉三角"><span class="nav-number">4.</span> <span class="nav-text">Problem D:旋转杨辉三角</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-E-铁打营盘流水兵"><span class="nav-number">5.</span> <span class="nav-text">Problem E:铁打营盘流水兵</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-superpowers"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">chasmk</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">5k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">5 分钟</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+  <div style="display: none;">
+    <script pjax src="//s95.cnzz.com/z_stat.php?id=1277916961&web_id=1277916961"></script>
+  </div>
+
+
+  <script pjax>
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66462916";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  <script pjax>
+    var _mtac = {};
+    (function() {
+      var mta = document.createElement("script");
+      mta.src = "https://pingjs.qq.com/h5/stats.js";
+      mta.setAttribute("name", "MTAH5");
+      mta.setAttribute("sid", "500693507");
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(mta, s);
+    })();
+  </script>
+
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
+  <script src="/lib/reading_progress/reading_progress.js"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+<script src="/js/utils.js?v=7.3.0"></script>
+  <script src="/js/motion.js?v=7.3.0"></script>
+
+
+  <script src="/js/affix.js?v=7.3.0"></script>
+  <script src="/js/schemes/pisces.js?v=7.3.0"></script>
+
+
+
+<script src="/js/next-boot.js?v=7.3.0"></script>
+
+
+
+
+  
+
+
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script pjax>
+  if (CONFIG.page.isPost) {
+    bookmark.scrollToMark('auto', "#更多");
+  } else {
+    bookmark.loadBookmark();
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.3.0"></script>
+
+
+
+
+
+  <script src="//code.tidio.co/67gsadn6fkk4dubuweyal7mgk9xqnoyg.js"></script>
+
+
+
+
+
+
+
+
+    <div id="pjax">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  <script src="/js/scrollspy.js?v=7.3.0"></script>
+<script src="/js/post-details.js?v=7.3.0"></script>
+
+
+    
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', function() {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'f4Dl7HN68VL2gX4f45iWrzAt-gzGzoHsz',
+    appKey: 'fNidCzHKtF728bDQvTWL8G8A',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
+
+    </div>
+    <script>
+var pjax = new Pjax({
+  selectors: [
+    'title',
+    '#page-configurations',
+    '.content-wrap',
+    '.sidebar-inner',
+    '#pjax'
+  ],
+  switches: {
+    '.sidebar-inner': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo: !CONFIG.save_scroll
+});
+$(document).on('pjax:send', function() {
+  $('.sidebar-inner').stop().fadeTo('fast', 0);
+  CONFIG.save_scroll && clearInterval(NexT.utils.saveScrollTimer);
+});
+$(document).on('pjax:success', function() {
+  $('script[pjax], script#page-configurations, #pjax script').each(function(i, o) {
+    $(o).parent().append($(o).remove());
+  });
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  $('.sidebar-inner .motion-element').css('opacity', 1);
+  $('.sidebar-inner').fadeTo('fast', 1);
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+  
+ 
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+</body>
+</html>
